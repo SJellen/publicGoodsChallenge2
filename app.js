@@ -2,7 +2,6 @@
 let counterStorage = localStorage.getItem('counter')
 counterStorage = JSON.parse(counterStorage)
 
-
 let counter;
 if (counterStorage === undefined) {
     counter = 0
@@ -47,18 +46,13 @@ function showMain() {
 showMain()
 
 function hideMain() {
-    console.log(counter)
     mainContainer.classList.toggle("hide")
     setTimeout(() => {
        mainContainer.classList.toggle("visible") 
     },2000)
     counter++
     localStorage.setItem("counter", counter)
-    console.log(counter)
 }
 
 fetchDataBtn.addEventListener("click", getData)
 closeBtn.addEventListener("click", hideMain)
-
-
-
