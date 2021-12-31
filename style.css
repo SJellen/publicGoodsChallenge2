@@ -69,8 +69,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 200px;
-  overflow-x: scroll;
+  height: 300px;
 }
 
 .main-container .text-container ul li {
@@ -100,6 +99,7 @@ body {
 }
 
 .main-container .text-container .button-container {
+  visibility: hidden;
   width: 100%;
   margin-bottom: 2rem;
   display: -webkit-box;
@@ -125,8 +125,8 @@ body {
 
 .visible {
   visibility: visible;
-  -webkit-animation: slideup 2s linear;
-          animation: slideup 2s linear;
+  -webkit-animation: slideUp 2s linear;
+          animation: slideUp 2s linear;
 }
 
 .hide {
@@ -134,7 +134,7 @@ body {
           animation: slideDown 2s linear;
 }
 
-@-webkit-keyframes slideup {
+@-webkit-keyframes slideUp {
   from {
     -webkit-transform: translateY(200%);
             transform: translateY(200%);
@@ -145,7 +145,7 @@ body {
   }
 }
 
-@keyframes slideup {
+@keyframes slideUp {
   from {
     -webkit-transform: translateY(200%);
             transform: translateY(200%);
