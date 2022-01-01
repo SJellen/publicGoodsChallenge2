@@ -6,6 +6,7 @@ body {
     align-items: center;
     overflow-y: hidden;
     background-color: rgb(229, 228, 228);
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-container {
@@ -34,7 +35,9 @@ body {
         h1 {
             width: 80%;
             margin-left: 10%;
-            font-size: 24px;
+            margin-top: 3rem;
+            font-size: 28px;
+            font-weight: 600;;
         }
         ul {
             list-style: none;
@@ -42,6 +45,7 @@ body {
             display: flex;
             flex-direction: column;
             height: 300px;
+            margin-top: 0;
             li {
                 margin-left: -2rem;
                 padding: .25rem 0;
